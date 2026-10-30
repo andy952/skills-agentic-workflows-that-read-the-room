@@ -17,6 +17,7 @@ network:
   allowed:
     - github.com
     - github.blog
+    - awesome-copilot.github.com
 engine:
   id: copilot
   copilot-sdk: true
@@ -30,9 +31,10 @@ Use these sources:
 - `notes/mona-notes.md`
 - GitHub Blog: https://github.blog/latest/
 - GitHub Changelog: https://github.blog/changelog/
+- Awesome Copilot workflows: https://awesome-copilot.github.com/workflows/
 
-Web fetch the latest GitHub Blog and the GitHub Changelog, then summarize the most relevant updates for Mona's readers.
+Web fetch the latest GitHub Blog, the GitHub Changelog, and the Awesome Copilot workflows page, then summarize the most relevant updates for Mona's readers.
 
-Update `site/content/github-info.md` with concise, practical updates that reflect both Mona's notes and the latest GitHub Blog and GitHub Changelog content. Include source context when the update comes from the GitHub Blog or GitHub Changelog.
+Update `site/content/github-info.md` with concise, practical updates that reflect both Mona's notes and the latest GitHub Blog, GitHub Changelog, and Awesome Copilot workflow content. Include source context when the update comes from the GitHub Blog, GitHub Changelog, or Awesome Copilot workflows.
 
 Open a pull request for Mona to review. Use `safe-outputs` with `create-pull-request` so changes are proposed without writing directly to `main`. Keep the PR focused on Mona's GitHub Info updates and include a title that clearly references Mona or GitHub Info.
